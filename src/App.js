@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 
-import Wrapper from "./components/Helpers/Wrapper/Wrapper";
 import AddUser from "./components/Users/UserInput/AddUser";
 import UsersList from "./components/Users/UserList/UsersList";
 
@@ -17,10 +16,10 @@ function App() {
   };
 
   return (
-    <Wrapper>
+    <Fragment>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </Wrapper>
+    </Fragment>
   );
 }
 

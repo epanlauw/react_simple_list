@@ -1,5 +1,4 @@
-import { useState } from "react";
-import Wrapper from "../../Helpers/Wrapper/Wrapper";
+import { useState, Fragment } from "react";
 
 import Button from "../../UI/Button/Button";
 import Card from "../../UI/Card/Card";
@@ -53,7 +52,7 @@ const AddUser = (props) => {
   };
 
   return (
-    <Wrapper>
+    <Fragment>
       {error && (
         <ErrorModal
           title={error.title}
@@ -80,7 +79,7 @@ const AddUser = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </Wrapper>
+    </Fragment>
   );
 };
 
